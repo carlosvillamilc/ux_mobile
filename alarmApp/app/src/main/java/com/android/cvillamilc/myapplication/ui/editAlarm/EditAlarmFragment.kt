@@ -1,14 +1,14 @@
 package com.android.cvillamilc.myapplication.ui.editAlarm
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.android.cvillamilc.myapplication.R
 import com.android.cvillamilc.myapplication.databinding.FragmentEditAlarmBinding
 
@@ -31,10 +31,24 @@ class EditAlarmFragment : Fragment() {
         _binding = FragmentEditAlarmBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        //val myVariable = arguments?.getString("myVariable")
+        val bundle = arguments
+        val typeValue = bundle?.getString("typeKey")
+        Log.d("typeKey",typeValue.toString() ) // This will print "Hello World" in the logcat
+
         val textView: TextView = binding.textConfiguration
-        editAlarmViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+
+        if(typeValue.toString()=="Editar"){
+            editAlarmViewModel.textEditAlarm.observe(viewLifecycleOwner) {
+                textView.text = it
+            }
         }
+        else{
+            editAlarmViewModel.textNewAlarm.observe(viewLifecycleOwner) {
+                textView.text = it
+            }
+        }
+
 
         val spinnerHour1: Spinner = root.findViewById(R.id.spinner_hour1)
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -124,6 +138,23 @@ class EditAlarmFragment : Fragment() {
                 // Apply the adapter to the spinner
                 spinnerSound.adapter = adapter
             }
+        }
+        val buttonBack = root.findViewById<ImageButton>(R.id.imageButton_editAlarm_back)
+
+        buttonBack.setOnClickListener {
+            root.findNavController().navigate(R.id.action_editAlarmFragment_to_homeFragment)
+        }
+
+        val buttonSave = root.findViewById<Button>(R.id.button_guardar)
+
+        buttonSave.setOnClickListener {
+            root.findNavController().navigate(R.id.action_editAlarmFragment_to_homeFragment)
+        }
+
+        val buttonCancel = root.findViewById<Button>(R.id.button_cancelar)
+
+        buttonCancel.setOnClickListener {
+            root.findNavController().navigate(R.id.action_editAlarmFragment_to_homeFragment)
         }
 
         return root

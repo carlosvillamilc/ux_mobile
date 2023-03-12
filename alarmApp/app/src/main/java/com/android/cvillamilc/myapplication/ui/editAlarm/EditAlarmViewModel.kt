@@ -6,8 +6,13 @@ import androidx.lifecycle.ViewModel
 
 class EditAlarmViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
+    private val _textEditarAlarm = MutableLiveData<String>().apply {
         value = "Editar Alarma"
     }
-    val text: LiveData<String> = _text
+    val textEditAlarm: LiveData<String> = _textEditarAlarm
+
+    private val _textNewAlarm = MutableLiveData<String>().apply {
+        value = "Nueva Alarma"
+    }
+    val textNewAlarm: LiveData<String> = _textNewAlarm
 }

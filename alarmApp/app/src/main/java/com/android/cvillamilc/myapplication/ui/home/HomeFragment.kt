@@ -5,13 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.android.cvillamilc.myapplication.R
 import com.android.cvillamilc.myapplication.databinding.FragmentHomeBinding
+import com.android.cvillamilc.myapplication.ui.editAlarm.EditAlarmFragment
 
 class HomeFragment : Fragment() {
 
@@ -32,21 +30,27 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val bundle = Bundle()
+        bundle.putString("typeKey", "Editar")
+
         val buttonEditAlarm1 = root.findViewById<Button>(R.id.button_edit_alarm1)
+        val editAlarmFragment = EditAlarmFragment()
+        editAlarmFragment.arguments = bundle
 
         buttonEditAlarm1.setOnClickListener {
-            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment)
+
+            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment,bundle)
         }
         val buttonEditAlarm2 = root.findViewById<Button>(R.id.button_edit_alarm2)
 
         buttonEditAlarm2.setOnClickListener {
-            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment)
+            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment,bundle)
         }
 
         val buttonEditAlarm3 = root.findViewById<Button>(R.id.button_edit_alarm3)
 
         buttonEditAlarm3.setOnClickListener {
-            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment)
+            root.findNavController().navigate(R.id.action_homeFragment_to_editAlarmFragment,bundle)
         }
 
 

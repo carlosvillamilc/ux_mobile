@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_configuration"
         android:icon="@drawable/settings"
         android:title="@string/title_configuration" />
 
     <item
-        android:id="@+id/navigation_configuration"
+        android:id="@+id/navigation_edit_alarm"
         android:icon="@drawable/add"
         android:title="@string/title_nueva_alarma" />
 
     <item
-        android:id="@+id/navigation_sugestions"
+        android:id="@+id/navigation_suggestions"
         android:icon="@drawable/help"
         android:title="@string/title_sugerencias" />
 
