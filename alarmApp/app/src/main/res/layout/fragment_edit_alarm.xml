@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editAlarm.EditAlarmFragment">
+
+    <TextView
+        android:id="@+id/text_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/textView_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Hora"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_configuration" />
+
+    <Spinner
+        android:id="@+id/spinner_hour1"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_hora"
+        app:layout_constraintTop_toTopOf="@+id/textView_hora" />
+
+    <Spinner
+        android:id="@+id/spinner_minute1"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner_hour1"
+        app:layout_constraintTop_toTopOf="@+id/textView_hora" />
+
+    <Spinner
+        android:id="@+id/spinner_ampm1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner_minute1"
+        app:layout_constraintTop_toTopOf="@+id/textView_hora" />
+
+    <TextView
+        android:id="@+id/textView_categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Categoria"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_hora" />
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_categoria"
+        app:layout_constraintTop_toTopOf="@+id/textView_categoria" />
+
+    <TextView
+        android:id="@+id/textView_repetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Repetir"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_categoria" />
+
+    <Spinner
+        android:id="@+id/spinner_repetir"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toEndOf="@+id/textView_repetir"
+        app:layout_constraintTop_toTopOf="@+id/textView_repetir" />
+
+    <TextView
+        android:id="@+id/textView_sonido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Sonido"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_repetir" />
+
+    <Spinner
+        android:id="@+id/spinner_sonido"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/textView_sonido"
+        app:layout_constraintTop_toTopOf="@+id/textView_sonido" />
+
+    <TextView
+        android:id="@+id/textView_posponer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Posponer"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sonido" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text=""
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_posponer"
+        app:layout_constraintTop_toTopOf="@+id/textView_posponer" />
+
+    <Button
+        android:id="@+id/button_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#005CAB"
+        android:text="Cancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_posponer" />
+
+    <Button
+        android:id="@+id/button_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#005CAB"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_cancelar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

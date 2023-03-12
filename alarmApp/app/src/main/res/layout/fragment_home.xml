@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView_logo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arsenal"
+        android:text="AlarmApp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo_app" />
+
+    <TextView
+        android:id="@+id/text_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/arsenal"
+        android:text="05:00 AM"
+        android:textAlignment="viewStart"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_app_name" />
+    <TextView
+        android:id="@+id/text_alarm1_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Trabajo"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm1" />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text=""
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_alarm1"
+        app:layout_constraintTop_toTopOf="@+id/button_edit_alarm1" />
+    <Button
+        android:id="@+id/button_edit_alarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Editar"
+        android:backgroundTint="#005CAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch_alarm2"
+        app:layout_constraintTop_toTopOf="@+id/text_alarm2" />
+
+    <TextView
+        android:id="@+id/text_alarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/arsenal"
+        android:text="07:00 AM"
+        android:textAlignment="viewStart"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm1" />
+    <TextView
+        android:id="@+id/text_alarm2_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Ejercicio"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm2" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text=""
+        android:textColorHighlight="#FFCD1a"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_alarm2"
+        app:layout_constraintTop_toTopOf="@+id/button_edit_alarm2" />
+    <Button
+        android:id="@+id/button_edit_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Editar"
+        android:backgroundTint="#005CAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch_alarm1"
+        app:layout_constraintTop_toTopOf="@+id/text_alarm1" />
+
+    <TextView
+        android:id="@+id/text_alarm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/arsenal"
+        android:text="07:00 AM"
+        android:textAlignment="viewStart"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm2" />
+    <TextView
+        android:id="@+id/text_alarm3_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Medicamento"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm3" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:switchMinWidth="56dp"
+        android:text=""
+        android:textColorHighlight="#FFCD1A"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_alarm3"
+        app:layout_constraintTop_toTopOf="@+id/button_edit_alarm3" />
+    <Button
+        android:id="@+id/button_edit_alarm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Editar"
+        android:backgroundTint="#005CAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch_alarm3"
+        app:layout_constraintTop_toTopOf="@+id/text_alarm3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

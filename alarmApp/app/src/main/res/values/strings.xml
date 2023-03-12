@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_configuration">Configuración</string>
+    <string name="title_nueva_alarma">Nueva Alarma</string>
+    <string name="title_sugerencias">Sugerencias</string>
+    <string-array name="hour_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="am_pm_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>Medicina</item>
+        <item>Lectura</item>
+        <item>Ejercicio</item>
+        <item>Salud</item>
+    </string-array>
+    <string-array name="frequency_array">
+        <item>Diaria</item>
+        <item>Semanal</item>
+        <item>Mensual</item>
+        <item>Anual</item>
+        <item>Personalizada</item>
+    </string-array>
+    <string-array name="sound_array">
+        <item>sonido.mp3</item>
+        <item>aves.mp3</item>
+        <item>musica.mp3</item>
+        <item>dance.mp3</item>
+        <item>ringtone.mp3</item>
+    </string-array>
+</resources>

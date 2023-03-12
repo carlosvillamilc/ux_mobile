@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.android.cvillamilc.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_configuration"
+        tools:layout="@layout/fragment_home">
+        <!--<action
+            android:id="@+id/action_homeFragment_to_configurationFragment"
+            app:destination="@id/navigation_configuration" />-->
+        <action
+            android:id="@+id/action_homeFragment_to_editAlarmFragment"
+            app:destination="@id/navigation_edit_alarm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_configuration"
+        android:name="com.android.cvillamilc.myapplication.ui.configuration.ConfigurationFragment"
+        android:label="@string/title_configuration"
+        tools:layout="@layout/fragment_configuration">
+        <action
+            android:id="@+id/action_configurationFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_edit_alarm"
+        android:name="com.android.cvillamilc.myapplication.ui.editAlarm.EditAlarmFragment"
+        android:label="@string/title_nueva_alarma"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_sugestions"
+        android:name="com.android.cvillamilc.myapplication.ui.suggestions.SuggestionsFragment"
+        android:label="@string/title_sugerencias"
+        tools:layout="@layout/fragment_sugestions" />
+</navigation>
