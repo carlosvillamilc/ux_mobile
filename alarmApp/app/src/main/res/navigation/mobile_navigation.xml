@@ -23,6 +23,10 @@
         <action
             android:id="@+id/action_configurationFragment_to_homeFragment"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_configurationFragment_to_configSuggestionFragment"
+            app:destination="@id/navigation_config_suggestions" />
+
     </fragment>
 
     <fragment
@@ -34,6 +38,17 @@
             android:id="@+id/action_editAlarmFragment_to_homeFragment"
             app:destination="@id/navigation_home" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_config_suggestions"
+        android:name="com.android.cvillamilc.myapplication.ui.configSuggestions.ConfigSuggestionsFragment"
+        android:label="@string/title_config_suggestions"
+        tools:layout="@layout/fragment_config_suggestions">
+        <action
+            android:id="@+id/action_configSuggestionsFragment_to_configurationFragment"
+            app:destination="@id/navigation_configuration" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/navigation_suggestions"

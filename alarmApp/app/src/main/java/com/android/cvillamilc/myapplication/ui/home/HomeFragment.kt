@@ -34,8 +34,8 @@ class HomeFragment : Fragment() {
         bundle.putString("typeKey", "Editar")
 
         val buttonEditAlarm1 = root.findViewById<Button>(R.id.button_edit_alarm1)
-        val editAlarmFragment = EditAlarmFragment()
-        editAlarmFragment.arguments = bundle
+        val configSuggestionsFragment = EditAlarmFragment()
+        configSuggestionsFragment.arguments = bundle
 
         buttonEditAlarm1.setOnClickListener {
 

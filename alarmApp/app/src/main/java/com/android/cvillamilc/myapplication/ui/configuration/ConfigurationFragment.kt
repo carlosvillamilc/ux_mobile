@@ -14,6 +14,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.android.cvillamilc.myapplication.R
 import com.android.cvillamilc.myapplication.databinding.FragmentConfigurationBinding
+import com.android.cvillamilc.myapplication.ui.configSuggestions.ConfigSuggestionsFragment
+import com.android.cvillamilc.myapplication.ui.editAlarm.EditAlarmFragment
 
 
 class ConfigurationFragment : Fragment() {
@@ -133,6 +135,34 @@ class ConfigurationFragment : Fragment() {
 
         buttonBack.setOnClickListener {
             root.findNavController().navigate(R.id.action_configurationFragment_to_homeFragment)
+        }
+
+        val bundle = Bundle()
+        val configSuggestionsFragment = ConfigSuggestionsFragment()
+
+        val buttonConfigSuggestionHealth = root.findViewById<Button>(R.id.button)
+
+        buttonConfigSuggestionHealth.setOnClickListener {
+            bundle.putString("typeKey", "Salud")
+            configSuggestionsFragment.arguments = bundle
+            root.findNavController().navigate(R.id.action_configurationFragment_to_configSuggestionFragment,bundle)
+        }
+
+        val buttonConfigSuggestionHabits = root.findViewById<Button>(R.id.button2)
+
+        buttonConfigSuggestionHabits.setOnClickListener {
+            bundle.putString("typeKey", "Habitos")
+            configSuggestionsFragment.arguments = bundle
+            root.findNavController().navigate(R.id.action_configurationFragment_to_configSuggestionFragment,bundle)
+        }
+
+        val buttonCancel = root.findViewById<Button>(R.id.button_cancelar)
+        buttonCancel.setOnClickListener {
+            root.findNavController().navigate(R.id.action_configurationFragment_to_homeFragment,bundle)
+        }
+        val buttonSave = root.findViewById<Button>(R.id.button_guardar)
+        buttonSave.setOnClickListener {
+            root.findNavController().navigate(R.id.action_configurationFragment_to_homeFragment,bundle)
         }
 
         return root

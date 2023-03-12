@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.configSuggestions.ConfigSuggestionsFragment">
+
+    <TextView
+        android:id="@+id/text_config_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Sugerencias"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/textView_config_suggestions_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arsenal"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_config_suggestions" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text=""
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_config_suggestions_type"
+        app:layout_constraintTop_toTopOf="@+id/textView_config_suggestions_type" />
+
+    <ImageButton
+        android:id="@+id/imageButton_configSuggestions_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_integration"
+        android:layout_width="154dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/arsenal"
+        android:text="Integración"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_alarm1" />
+
+    <ImageButton
+        android:id="@+id/imageButton_health"
+        android:layout_width="131dp"
+        android:layout_height="105dp"
+        android:src="@drawable/heart"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_integration" />
+
+    <TextView
+        android:id="@+id/textView_app_health"
+        android:layout_width="85dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/arsenal"
+        android:text="App Salud"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_health" />
+
+    <ImageButton
+        android:id="@+id/imageButton_sport"
+        android:layout_width="131dp"
+        android:layout_height="105dp"
+        android:src="@drawable/sport"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_app_health" />
+
+    <TextView
+        android:id="@+id/textView_app_sport"
+        android:layout_width="111dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/arsenal"
+        android:text="App Ejercicio"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_sport" />
+
+    <ImageButton
+        android:id="@+id/imageButton_book"
+        android:layout_width="131dp"
+        android:layout_height="105dp"
+        android:src="@drawable/book"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_app_sport" />
+    <TextView
+        android:id="@+id/textView_app_book"
+        android:layout_width="111dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/arsenal"
+        android:text="App Lectura"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_book" />
+    <ImageButton
+        android:id="@+id/imageButton_study"
+        android:layout_width="131dp"
+        android:layout_height="105dp"
+        android:src="@drawable/study"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_app_book" />
+    <TextView
+        android:id="@+id/textView_app_study"
+        android:layout_width="111dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/arsenal"
+        android:text="App Estudio"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_study" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

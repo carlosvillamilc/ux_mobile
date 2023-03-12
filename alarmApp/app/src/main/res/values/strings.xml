@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="title_home">Inicio</string>
     <string name="title_configuration">Configuración</string>
+    <string name="title_config_suggestions">Configuración Sugerencias</string>
     <string name="title_nueva_alarma">Nueva Alarma</string>
     <string name="title_sugerencias">Sugerencias</string>
     <string-array name="hour_array">
@@ -43,4 +45,10 @@
     </string-array>
     <string name="suggestion1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec pulvinar augue. Nulla ac risus at magna porttitor rutrum. Duis a enim egestas, pellentesque neque ut, lobortis ex. Duis ullamcorper est erat, ac vulputate neque elementum in.</string>
     <string name="suggestion2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec pulvinar augue. Nulla ac risus at magna porttitor rutrum. Duis a enim egestas, pellentesque neque ut, lobortis ex. Duis ullamcorper est erat, ac vulputate neque elementum in.</string>
-</resources>
+    <string name="no_suggestions">No tienes ninguna sugerencia...</string>
+    <string name="text_forgot_password"><u>Olvidaste la contraseña?</u></string>
+    <string name="text_register"><u>Registrarse</u></string>
+    <string name="text_recover_password">A tu email seria enviado un codigo para poder realizar el proceso de recuperación de contraseña</string>
+
+
+    </resources>

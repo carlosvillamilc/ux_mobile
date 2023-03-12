@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.editAlarm.EditAlarmFragment">
+    tools:context=".ui.editAlarm.ConfigSuggestionsFragment">
 
     <TextView
         android:id="@+id/text_configuration"
@@ -158,6 +158,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="#005CAB"
         android:text="Cancelar"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_posponer" />
 
@@ -168,6 +169,7 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="#005CAB"
         android:text="Guardar"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button_cancelar" />
 

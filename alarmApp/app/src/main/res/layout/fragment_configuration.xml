@@ -129,6 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:text="Salud"
+        android:textAllCaps="false"
         android:backgroundTint="#005CAB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -139,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:text="Habitos"
+        android:textAllCaps="false"
         android:backgroundTint="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -251,6 +253,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#005CAB"
         android:text="Cancelar"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_hour1" />
 
@@ -261,6 +264,7 @@
         android:layout_marginEnd="40dp"
         android:backgroundTint="#005CAB"
         android:text="Guardar"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button_cancelar" />
 

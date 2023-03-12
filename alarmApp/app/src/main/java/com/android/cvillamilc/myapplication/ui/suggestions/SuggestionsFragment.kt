@@ -5,12 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.Button
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.android.cvillamilc.myapplication.R
 import com.android.cvillamilc.myapplication.databinding.FragmentSuggestionsBinding
+
 
 class SuggestionsFragment : Fragment() {
 
@@ -40,6 +43,19 @@ class SuggestionsFragment : Fragment() {
 
         buttonBack.setOnClickListener {
             root.findNavController().navigate(R.id.action_suggestionsFragment_to_homeFragment)
+        }
+
+        val buttonDeleteSuggestions = root.findViewById<Button>(R.id.button_discard_suggestions)
+        buttonDeleteSuggestions.setOnClickListener {
+
+            val cardview1 = root.findViewById<CardView>(R.id.materialCardView)
+            cardview1.setVisibility(View.GONE);
+
+            val cardview2 = root.findViewById<CardView>(R.id.materialCardView2)
+            cardview2.setVisibility(View.GONE);
+
+            val cardview3 = root.findViewById<CardView>(R.id.materialCardView3)
+            cardview3.setVisibility(View.VISIBLE);
         }
         return root
     }

@@ -25,7 +25,7 @@ class EditAlarmFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val editAlarmViewModel =
+        val configSuggestionsViewModel =
             ViewModelProvider(this).get(EditAlarmViewModel::class.java)
 
         _binding = FragmentEditAlarmBinding.inflate(inflater, container, false)
@@ -39,12 +39,12 @@ class EditAlarmFragment : Fragment() {
         val textView: TextView = binding.textConfiguration
 
         if(typeValue.toString()=="Editar"){
-            editAlarmViewModel.textEditAlarm.observe(viewLifecycleOwner) {
+            configSuggestionsViewModel.textEditAlarm.observe(viewLifecycleOwner) {
                 textView.text = it
             }
         }
         else{
-            editAlarmViewModel.textNewAlarm.observe(viewLifecycleOwner) {
+            configSuggestionsViewModel.textNewAlarm.observe(viewLifecycleOwner) {
                 textView.text = it
             }
         }
