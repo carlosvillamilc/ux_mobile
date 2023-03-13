@@ -47,6 +47,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:hint="Nombre"
+        app:boxStrokeColor="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_register_screen">
@@ -64,6 +65,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:hint="Apellido"
+        app:boxStrokeColor="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFirstName">
@@ -81,6 +83,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:hint="Email"
+        app:boxStrokeColor="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLastName">
@@ -98,6 +101,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:hint="Nombre Usuario"
+        app:boxStrokeColor="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail">
@@ -115,6 +119,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:hint="Contraseña"
+        app:boxStrokeColor="#005CAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUsername">
@@ -147,12 +152,5 @@
         android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
