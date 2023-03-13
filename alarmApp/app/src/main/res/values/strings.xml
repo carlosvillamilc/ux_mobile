@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">AlarmApp</string>
+    <string name="login_name">Login</string>
     <string name="title_home">Inicio</string>
+    <string name="title_recover_password">Recuperar Contraseña</string>
+    <string name="title_register">Registrarse</string>
+    <string name="title_login">Login</string>
+    <string name="title_login_google">Login Google</string>
     <string name="title_configuration">Configuración</string>
     <string name="title_config_suggestions">Configuración Sugerencias</string>
     <string name="title_nueva_alarma">Nueva Alarma</string>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.android.cvillamilc.myapplication.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_recoverPasswordFragment"
+            app:destination="@id/navigation_recover_password" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/navigation_register" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginGoogleFragment"
+            app:destination="@id/navigation_login_google" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_recover_password"
+        android:name="com.android.cvillamilc.myapplication.ui.login.RecoverPasswordFragment"
+        android:label="@string/title_recover_password"
+        tools:layout="@layout/fragment_recover_password">
+        <action
+            android:id="@+id/action_recoverPasswordFragment_to_loginFragment"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.android.cvillamilc.myapplication.ui.login.RegisterFragment"
+        android:label="@string/title_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login_google"
+        android:name="com.android.cvillamilc.myapplication.ui.login.LoginGoogleFragment"
+        android:label="@string/title_login_google"
+        tools:layout="@layout/fragment_login_google">
+        <action
+            android:id="@+id/action_loginGoogleFragment_to_loginFragment"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+
+</navigation>
